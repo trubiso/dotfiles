@@ -34,9 +34,9 @@ antigen theme amuse
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=243
 
-ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=177
-ZSH_HIGHLIGHT_STYLES[precommand]=fg=177
-ZSH_HIGHLIGHT_STYLES[arg0]=fg=177
+ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=177,bold
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=177,bold
+ZSH_HIGHLIGHT_STYLES[arg0]=fg=177,bold
 
 ZSH_HIGHLIGHT_STYLES[back-quoted-argument]=fg=141
 ZSH_HIGHLIGHT_STYLES[single-quoted-argument]=fg=141
