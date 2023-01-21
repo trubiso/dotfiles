@@ -1,4 +1,6 @@
 # pulls dotfiles
+cp $HOME/.xinitrc                       df/.xinitrc
+
 cp $HOME/.zshrc                         df/.zshrc
 
 cp $HOME/.config/monitors.sh            df/monitors.sh

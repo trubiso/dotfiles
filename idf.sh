@@ -1,3 +1,4 @@
+cp df/.xinitrc $HOME/.xinitrc
 cp df/.zshrc $HOME/.zshrc
 
 cp df/monitors.sh $HOME/.config/monitors.sh

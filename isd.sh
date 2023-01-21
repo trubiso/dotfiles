@@ -7,7 +7,7 @@ else
 fi
 
 soft="neovim kitty dmenu i3-wm i3lock i3status zsh"
-deps="universal-ctags nodejs clang cmake antigen-git"
+deps="universal-ctags nodejs npm clang cmake antigen-git"
 
 echo Installing software...
 $1 $soft
