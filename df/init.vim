@@ -19,6 +19,7 @@ Plug 'tikhomirov/vim-glsl'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'justinmk/vim-sneak'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'fladson/vim-kitty'
 call plug#end()
 
 autocmd VimEnter *

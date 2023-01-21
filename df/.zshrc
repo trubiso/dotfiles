@@ -1,5 +1,6 @@
 source $HOME/.config/antigen.zsh
 export TERM=xterm-256color
+export GPG_TTY=$(tty)
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
