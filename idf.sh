@@ -1,5 +1,7 @@
 cp df/.zshrc $HOME/.zshrc
 
+cp df/monitors.sh $HOME/.config/monitors.sh
+
 mkdir -p $HOME/.config/i3
 cp df/i3 $HOME/.config/i3/config
 
