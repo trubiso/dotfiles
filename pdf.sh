@@ -3,6 +3,8 @@ cp $HOME/.xinitrc                       df/.xinitrc
 
 cp $HOME/.zshrc                         df/.zshrc
 
+cp $HOME/.config/kitty/kitty.conf       df/kitty.conf
+
 cp $HOME/.config/monitors.sh            df/monitors.sh
 
 cp $HOME/.config/i3/config              df/i3

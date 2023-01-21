@@ -1,5 +1,8 @@
 cp df/.xinitrc $HOME/.xinitrc
+
 cp df/.zshrc $HOME/.zshrc
+
+cp df/kitty.conf $HOME/.config/kitty/kitty.conf
 
 cp df/monitors.sh $HOME/.config/monitors.sh
 
