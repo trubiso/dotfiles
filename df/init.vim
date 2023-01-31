@@ -20,6 +20,7 @@ Plug 'bfrg/vim-cpp-modern'
 Plug 'justinmk/vim-sneak'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'fladson/vim-kitty'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 autocmd VimEnter *
@@ -69,5 +70,5 @@ colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
 let g:airline#extensions#default#layout = [['a', 'c'], ['x', 'z']]
 let g:airline_section_z = "line %#__accent_bold#%l%#__restore__# col %#__accent_bold#%v%#__restore__#"
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-clangd']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-clangd', 'coc-cl']
 let g:sneak#s_next = 1

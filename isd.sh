@@ -6,7 +6,7 @@ else
   PKG=$1
 fi
 
-soft="neovim kitty dmenu i3-wm i3lock i3status zsh"
+soft="neovim kitty dmenu i3-wm i3lock i3status zsh dunst"
 deps="universal-ctags nodejs npm clang cmake antigen-git"
 
 echo Installing software...

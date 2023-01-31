@@ -1,6 +1,6 @@
-DP=DP-1
-DVI=DVI-D-1
-HDMI=HDMI-1
+DP=DP-0
+DVI=DVI-D-0
+HDMI=HDMI-0
 
 xrandr --output $DP   --rotate   left   --rate 144
 xrandr --output $DVI  --right-of $DP    --primary

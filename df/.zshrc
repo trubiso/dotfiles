@@ -35,9 +35,20 @@ antigen theme amuse
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=243
 
-ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=177,bold
-ZSH_HIGHLIGHT_STYLES[precommand]=fg=177,bold
+ZSH_HIGHLIGHT_STYLES[reserved-word]=fg=220,bold
+
+ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=158,bold
+ZSH_HIGHLIGHT_STYLES[alias]=fg=158,bold
+ZSH_HIGHLIGHT_STYLES[global-alias]=fg=158,bold
+
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=33,bold
+
+ZSH_HIGHLIGHT_STYLES[builtin]=fg=177,bold
+ZSH_HIGHLIGHT_STYLES[function]=fg=177,bold
+ZSH_HIGHLIGHT_STYLES[command]=fg=177,bold
 ZSH_HIGHLIGHT_STYLES[arg0]=fg=177,bold
+
+ZSH_HIGHLIGHT_STYLES[commandseparator]=fg=195,italics
 
 ZSH_HIGHLIGHT_STYLES[back-quoted-argument]=fg=141
 ZSH_HIGHLIGHT_STYLES[single-quoted-argument]=fg=141
@@ -45,4 +56,4 @@ ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=141
 
 antigen apply
 
-PS1='%F{111}%B%/%b%f → '
+PS1='%F{111}%B%/%b%f -> '
