@@ -10,10 +10,10 @@ soft="neovim kitty dmenu i3-wm i3lock i3status zsh dunst"
 deps="universal-ctags nodejs npm clang cmake antigen-git"
 
 echo Installing software...
-$1 $soft
+$PKG $soft
 
 echo Installing dependencies...
-$1 $deps
+$PKG $deps
 echo NodeJS version may be off \(current: $(node -v)\)
 
 echo Finished installing packages
