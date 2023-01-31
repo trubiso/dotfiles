@@ -16,4 +16,6 @@ mkdir -p                $HOME/.config/nvim
 cp df/init.vim          $HOME/.config/nvim/init.vim
 cp df/coc-settings.json $HOME/.config/nvim/coc-settings.json
 
-curl -L git.io/antigen > $HOME/.config/antigen.zsh
+if [ ! -f "$HOME/.config/antigen.zsh" ]; then
+  curl -L git.io/antigen > $HOME/.config/antigen.zsh
+fi
