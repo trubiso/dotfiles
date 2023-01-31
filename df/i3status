@@ -40,6 +40,7 @@ volume master {
 
 battery all {
         format = "%status: %percentage (%remaining)"
+        format_down = ""
 }
 
 disk "/" {
@@ -51,7 +52,7 @@ load {
 }
 
 memory {
-        format = "MEM: %used/%total"
+        format = "MEM: %percentage_used"
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
 }
@@ -67,7 +68,7 @@ cpu_temperature all {
 
 read_file BRIGHTNESS {
 	format = "S: %content/255"
-	format_bad = "%title - %errno: %error"
+	format_bad = ""
 	path = "/sys/class/backlight/amdgpu_bl0/brightness"
 }
 
