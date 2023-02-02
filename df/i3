@@ -26,6 +26,9 @@ exec --no-startup-id dex --autostart --environment i3
 # set up monitor config
 exec --no-startup-id $HOME/.config/monitors.sh
 
+# set up polybar
+exec --no-startup-id $HOME/.config/polybar.sh
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -230,9 +233,3 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        position top
-        status_command i3status
-}
