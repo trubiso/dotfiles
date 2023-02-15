@@ -1,11 +1,8 @@
-DP=DP-0
-DVI=DVI-D-0
-HDMI=HDMI-0
+DP=HDMI-0
+DVI=DP-0
+HDMI=DVI-D-0
 
-xrandr --output $DP   --rotate   left   --rate 144
-xrandr --output $DVI  --right-of $DP    --primary
-xrandr --output $HDMI --right-of $DVI   --rate 75
-xrandr --output $DP   --pos      0x-420
+xrandr --output $DP                     --mode 1920x1080 --rate 144.00
+xrandr --output $DVI  --right-of $DP    --mode 2560x1440 --rate 164.83 --primary
+xrandr --output $HDMI --right-of $DVI   --mode 1920x1080 --rate 75
 
-xrandr --output $HDMI --pos 3641x420
-xrandr --output $HDMI --pos 3640x420

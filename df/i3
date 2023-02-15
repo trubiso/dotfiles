@@ -41,7 +41,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # bg
-# exec --no-startup-id nitrogen --restore
+exec --no-startup-id nitrogen --restore
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -72,6 +72,10 @@ bindsym $mod+space 	exec --no-startup-id dmenu_run -p open -b -nf white -nb blac
 
 bindsym XF86MonBrightnessUp 	exec --no-startup-id light -A 5
 bindsym XF86MonBrightnessDown	exec --no-startup-id light -U 5
+
+# windowed apps
+for_window [window_role="About"] floating enable
+for_window [class="Nemo"] floating enable
 
 # change focus
 bindsym $mod+j focus left
