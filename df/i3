@@ -76,6 +76,8 @@ bindsym XF86MonBrightnessDown	exec --no-startup-id light -U 5
 # windowed apps
 for_window [window_role="About"] floating enable
 for_window [class="Nemo"] floating enable
+for_window [class="OpenGL"] floating enable
+for_window [title="QEMU"] floating enable
 
 # change focus
 bindsym $mod+j focus left

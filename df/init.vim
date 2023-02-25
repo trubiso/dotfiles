@@ -21,6 +21,11 @@ Plug 'justinmk/vim-sneak'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'fladson/vim-kitty'
 Plug 'airblade/vim-gitgutter'
+Plug 'nvim-tree/nvim-tree.lua'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'ryanoasis/vim-devicons'
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
 
 autocmd VimEnter *
@@ -40,7 +45,7 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 set autochdir
-set expandtab
+set noexpandtab
 set shiftround
 set smarttab
 set shiftwidth=2
